@@ -9,6 +9,13 @@ class Calculator{
     else
       return "Nothing";
   }
+  
+  public String getMeAPen(int cost){
+    if(cost>=10)
+      return "Pen";
+    else
+      return "Nothing";
+  }
 }
 
 public class Demo {

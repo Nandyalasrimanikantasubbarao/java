@@ -1,4 +1,4 @@
-class Hello{
+public class Hello{
   public static int num1=9;
   public static int num2=10;
   public static int Add(int a,int b){

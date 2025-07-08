@@ -10,13 +10,19 @@ public class sum {
 
     // comments
 
+    // Scanner sc=new Scanner(System.in);
+    // int a=sc.nextInt();
+    // int b=sc.nextInt();
+
+    // int sum=a+b;
+
+    // System.out.println(sum);
+
+    // type casting
     Scanner sc=new Scanner(System.in);
-    int a=sc.nextInt();
-    int b=sc.nextInt();
-
-    int sum=a+b;
-
-    System.out.println(sum);
+    float a=sc.nextFloat();
+    int b=(int) a;
+    System.out.println(b);
 
   }
   

@@ -35,9 +35,8 @@ class Dog{
   public void setColor(String color) {
     this.color = color;
   }
-  
-
 }
+
 public class Fundamentals {
   public static void main(String[] args) {
 

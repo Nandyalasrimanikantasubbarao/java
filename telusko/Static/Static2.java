@@ -41,7 +41,6 @@ class Demo2{
 public class Static2 {
   public static void main(String[] args) {
     Demo2.disp();
-
     Demo2 d2=new Demo2();
     d2.disp2();
   }

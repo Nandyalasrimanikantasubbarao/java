@@ -41,7 +41,7 @@ class FighterPlane extends Plane {
   
   
 }
-public class Demo {
+public class InnerDemo {
   public static void main(String[] args) {
     Plane p=new Plane();
     p.disp();

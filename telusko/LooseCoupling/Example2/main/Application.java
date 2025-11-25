@@ -7,6 +7,7 @@ public class Application {
   public static void main(String[] args) {
     Telusko t=new Telusko();
 
+    t.setCources(new DevOps());
     t.setCources(new SpringBootCorce());
     
     Boolean status=t.buyTheCource(2500d);

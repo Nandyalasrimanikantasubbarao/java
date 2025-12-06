@@ -11,6 +11,7 @@ public class Demo {
     al.add("Mani");
     al.add(0,true);
 
+    
     al.forEach((val)->{
       System.out.println(val);
     });

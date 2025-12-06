@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class Demo {
+public class D {
   public static void main(String[] args) {
     LinkedList l1=new LinkedList();
     l1.addFirst(10);

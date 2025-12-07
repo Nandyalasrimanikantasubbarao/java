@@ -17,6 +17,12 @@ public class Demo {
     
 
     System.out.println(ts);
+    System.out.println(ts.ceiling(101));
+    System.out.println(ts.higher(50));
+    
+    System.out.println(ts.floor(50));
+    
+    
   }
   
 }

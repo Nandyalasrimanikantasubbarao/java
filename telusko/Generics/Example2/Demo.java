@@ -24,6 +24,7 @@ public class Demo {
     System.out.println(g.getRef());
     
     ArrayList<?> a=new ArrayList<>();//?unknown-->wild card any type
+    
   }
   
 }

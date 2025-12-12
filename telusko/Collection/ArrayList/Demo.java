@@ -10,6 +10,7 @@ public class Demo {
     al.add(200);
     al.add("Mani");
     al.add(0,true);
+    al.add(null);
 
     
     al.forEach((val)->{

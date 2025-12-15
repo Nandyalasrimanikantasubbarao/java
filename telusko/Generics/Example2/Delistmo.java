@@ -13,7 +13,7 @@ class Generics<T>{
     return ref;
   }
 }
-public class Demo {
+public class Delistmo {
   public static void main(String[] args) {
     Generics<Integer> g=new Generics(44);
     g.disp();

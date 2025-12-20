@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 class Cricketer{
   int age;
@@ -17,6 +17,17 @@ class Cricketer{
     return "Cricketer [age="+age+" name="+name+", avg"+avg+"]";
   }
 }
+
+class Alpha1 implements Comparator<Cricketer>{
+  @Override
+  public int compare(Cricketer o1,Cricketer o2){
+    if(o1.avg>o2.avg){
+      return 1;
+    }else{
+      return -1;
+    }
+  }
+}
 public class Demo {
   public static void main(String[] args) {
     Cricketer c1=new Cricketer(35,"Virat",67.1 );
@@ -30,6 +41,9 @@ public class Demo {
     list.add(c3);
 
     System.out.println(list);
+    Alpha1 a=new Alpha1();
+    Collections.sort(list,a);
+    System.out.print(list);
   }
   
 }

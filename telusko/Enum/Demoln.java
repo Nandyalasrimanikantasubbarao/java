@@ -1,7 +1,7 @@
 enum Week{
   MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY
 }
-public class Demo {
+public class Demoln {
   public static void main(String[] args){
     Week week=Week.MONDAY;
     System.out.println(week);

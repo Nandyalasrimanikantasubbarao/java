@@ -82,6 +82,10 @@ public class Demo {
     thread2.start();
     thread3.start();
 
+    a.join();
+    b.join();
+    g.join();
+
     // a.start();
     // b.start();
     // g.start();

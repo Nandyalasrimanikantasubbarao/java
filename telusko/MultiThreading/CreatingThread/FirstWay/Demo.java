@@ -78,6 +78,10 @@ public class Demo {
     b.start();
     g.start();
 
+    a.join();
+    b.join();
+    g.join();
+
     System.out.println("Application terminated");
 
 

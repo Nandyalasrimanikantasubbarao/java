@@ -12,7 +12,7 @@ class Tiger extends Animal
     System.out.println("Tiger is hunts and eat...");
   }
 }
-public class Demo {
+public class Doutemo {
   public static void main(String[] args) {
     Tiger t=new Tiger();
     t.animalUsuallyHuntsAndEat();

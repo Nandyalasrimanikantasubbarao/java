@@ -29,14 +29,14 @@ class Library implements Runnable{
     }else{
       try{
         Thread.sleep(3000);
-        synchronized(res1){
-          System.out.println("Student2 has acquired "+res1);
+        synchronized(res3){
+          System.out.println("Student2 has acquired "+res3);
           Thread.sleep(4000);
           synchronized(res2){
             System.out.println("Student2 has acquired "+res2);
             Thread.sleep(4000);
-            synchronized(res3){
-              System.out.println("Student2 has acquired "+res3);
+            synchronized(res1){
+              System.out.println("Student2 has acquired "+res1);
               Thread.sleep(4000);
             }
 

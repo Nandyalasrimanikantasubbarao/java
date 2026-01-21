@@ -16,10 +16,10 @@ class CargoPlane //extends object
 
 // multiple inheritance not possible
 
-// class PassengerPlane extends CargoPlane, CargoPlane
-// {
+class PassengerPlane extends CargoPlane, CargoPlane
+{
 
-// }
+}
 
 class PassengerPlane extends CargoPlane
 {

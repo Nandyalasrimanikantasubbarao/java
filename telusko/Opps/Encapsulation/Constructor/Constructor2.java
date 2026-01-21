@@ -27,7 +27,7 @@ class Demo{
 }
 public class Constructor2 {
   public static void main(String[] args) {
-    InnerDemo d1=new InnerDemo(4);
+    Demo d1=new Demo(4);
     d1.disp();
   }
   

@@ -1,0 +1,140 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "Demo",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "FirstSpringbootExampleApplication",
+      "request": "launch",
+      "mainClass": "org.embarx.firstspringbootexample.FirstSpringbootExampleApplication",
+      "projectName": "FirstSpringbootExample"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "car.example.been.App",
+      "projectName": "SpringExample"
+    },
+    {
+      "type": "java",
+      "name": "App(1)",
+      "request": "launch",
+      "mainClass": "car.example.contructor.injection.App",
+      "projectName": "SpringExample"
+    },
+    {
+      "type": "java",
+      "name": "App(2)",
+      "request": "launch",
+      "mainClass": "car.example.setter.injection.App",
+      "projectName": "SpringExample"
+    },
+    {
+      "type": "java",
+      "name": "App(3)",
+      "request": "launch",
+      "mainClass": "com.example.autowire.name.App",
+      "projectName": "SpringExample"
+    },
+    {
+      "type": "java",
+      "name": "App(4)",
+      "request": "launch",
+      "mainClass": "com.example.autowire.name.injection.App",
+      "projectName": "SpringExample"
+    },
+    {
+      "type": "java",
+      "name": "App(5)",
+      "request": "launch",
+      "mainClass": "com.example.autowired.annotation.App",
+      "projectName": "SpringExample"
+    },
+    {
+      "type": "java",
+      "name": "App(6)",
+      "request": "launch",
+      "mainClass": "com.example.componentscan.App",
+      "projectName": "SpringExample"
+    },
+    {
+      "type": "java",
+      "name": "LooseCouplingExample",
+      "request": "launch",
+      "mainClass": "com.loose.coupling.LooseCouplingExample",
+      "projectName": "SpringExample"
+    },
+    {
+      "type": "java",
+      "name": "LooseCouplingExample(1)",
+      "request": "launch",
+      "mainClass": "com.loose.coupling.coupling.LooseCouplingExample",
+      "projectName": "SpringExample"
+    },
+    {
+      "type": "java",
+      "name": "TightCouplingExample",
+      "request": "launch",
+      "mainClass": "com.tight.coupling.TightCouplingExample",
+      "projectName": "SpringExample"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "org.example.Main",
+      "projectName": "SpringExample"
+    },
+    {
+      "type": "java",
+      "name": "FirstappApplication",
+      "request": "launch",
+      "mainClass": "com.firstapp.firstapp.FirstappApplication",
+      "projectName": "firstapp"
+    },
+    {
+      "type": "java",
+      "name": "FirstecomApplication",
+      "request": "launch",
+      "mainClass": "com.manikanta.firstecom.FirstecomApplication",
+      "projectName": "firstecom"
+    },
+    {
+      "type": "java",
+      "name": "FirstwebapplicationApplication",
+      "request": "launch",
+      "mainClass": "com.firstproject.firstwebapplication.FirstwebapplicationApplication",
+      "projectName": "firstwebapplication"
+    },
+    {
+      "type": "java",
+      "name": "QuickStartApplication",
+      "request": "launch",
+      "mainClass": "com.grove.quickStart.QuickStartApplication",
+      "projectName": "quickStart"
+    },
+    {
+      "type": "java",
+      "name": "SbEcomApplication",
+      "request": "launch",
+      "mainClass": "com.ecommerce.sb_ecom.SbEcomApplication",
+      "projectName": "sb-ecom"
+    }
+  ]
+}

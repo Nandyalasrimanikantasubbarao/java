@@ -8,6 +8,13 @@
       "type": "java",
       "name": "Demo",
       "request": "launch",
+      "mainClass": "ObjectLevelLocking.Demo",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
       "mainClass": "Demo",
       "projectName": ""
     },

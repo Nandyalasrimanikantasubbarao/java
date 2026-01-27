@@ -10,7 +10,7 @@ public class Demo {
 //        application context
 
         ApplicationContext container=new ClassPathXmlApplicationContext("applicationconfig.xml");
-        Telusko t=container.getBean(Telusko.class);
-        Boolean status=t.buyTheCourse(4400.99);
+//        Telusko t=container.getBean(Telusko.class);
+//        Boolean status=t.buyTheCourse(4400.99);
     }
 }

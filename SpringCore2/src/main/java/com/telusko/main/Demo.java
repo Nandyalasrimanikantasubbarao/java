@@ -1,5 +1,6 @@
-package main;
+package com.telusko.main;
 
+import com.telusko.services.Java;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -9,8 +10,9 @@ public class Demo {
 //        beanFactory
 //        application context
 
-        ApplicationContext container=new ClassPathXmlApplicationContext("applicationconfig.xml");
-        Telusko t=container.getBean(Telusko.class);
-        Boolean status=t.buyTheCourse(4400.99);
+        ApplicationContext container=new ClassPathXmlApplicationContext("application.xml");
+        Java t=container.getBean(Java.class);
+        t.getTheCourse(4040.40);
+
     }
 }

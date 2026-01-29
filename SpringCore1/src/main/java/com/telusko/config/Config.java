@@ -1,0 +1,20 @@
+package com.telusko.config;
+
+import com.telusko.web.Password;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Config {
+    public Config(){
+        System.out.println("Config is created");
+    }
+
+    @Bean
+    public Password createPasswordBean(){
+        Password pass=new Password("SHA");
+        return pass;
+
+    }
+}
+

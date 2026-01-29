@@ -1,16 +1,17 @@
-package main;
+package com.telusko.main;
 
+import com.telusko.web.Password;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Demo {
-    public static void main(String[] args) {
-
-//        beanFactory
-//        application context
+public class LaunchApp {
+    public static void main(String[] args)
+    {
 
         ApplicationContext container=new ClassPathXmlApplicationContext("applicationconfig.xml");
-        Telusko t=container.getBean(Telusko.class);
-        Boolean status=t.buyTheCourse(4400.99);
+
+        Password p=container.getBean(Password.class);
+        p.passwordAlgoUsed();
+
     }
 }

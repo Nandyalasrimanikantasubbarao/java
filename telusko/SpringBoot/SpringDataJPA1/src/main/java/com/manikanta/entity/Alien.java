@@ -1,19 +1,15 @@
-package com.manikanta.model;
+package com.manikanta.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-public class Employee {
+@Entity
+public class Alien {
+
+    @Id
     private Integer id;
     private  String name;
     private  String city;
-
-    public Employee(Integer id,String name,String city) {
-        this.id = id;
-        this.name=name;
-        this.city=city;
-    }
-
-    public Employee() {
-    }
 
     public Integer getId() {
         return id;
@@ -21,6 +17,14 @@ public class Employee {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getName() {
@@ -31,20 +35,22 @@ public class Employee {
         this.name = name;
     }
 
-    public String getCity() {
-        return city;
+    public Alien(Integer id, String name, String city) {
+        this.id = id;
+        this.name = name;
+        this.city = city;
+    }
+
+    public Alien() {
+        super();
     }
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Alien{" +
                 "id=" + id +
                 ", name='" + name  +
                 ", city='" + city  +
                 '}';
-    }
-
-    public void setCity(String city) {
-        this.city = city;
     }
 }

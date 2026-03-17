@@ -9,6 +9,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @SpringBootApplication
 public class SpringDataJpa1Application {
@@ -31,17 +32,44 @@ public class SpringDataJpa1Application {
 //
 //       service.registerMultipleVaccineInfo(vaccines).forEach(val->System.out.println(val));
 //       System.out.println(status);
-        Long count=service.vaccinecount();
-        System.out.println("Number of vaccine available"+count);
-        int id=2;
-        Boolean avaible=service.checkVaccineAvailability(id);
-        if(avaible){
-            System.out.println("Vaccine with id"+id+"is available");
-        }else {
-            System.out.println("Vaccine with id"+id+"not available");
-        }
+//        Long count=service.vaccinecount();
+//        System.out.println("Number of vaccine available"+count);
+//        int id=2;
+//        Boolean avaible=service.checkVaccineAvailability(id);
+//        if(avaible){
+//            System.out.println("Vaccine with id"+id+"is available");
+//        }else {
+//            System.out.println("Vaccine with id"+id+"not available");
+//        }
+//
+//        service.getAllVaccineInfo().forEach(val->System.out.println(val));
 
-        service.getAllVaccine().forEach(val->System.out.println(val));
+//        List<Integer> ids=new ArrayList<>();
+//        ids.add(2);
+//        ids.add(4);
+//
+//        service.getAllVaccine(ids).forEach(val-> System.out.println(val));
+//        int id=5;
+//        Optional<Vaccine> optional=service.getVaccineById(id);
+//        if(optional.isPresent()){
+//            System.out.println(optional.get());
+//        }else{
+//            System.out.println("Vaccine with id " +id+" is not present in records");
+//        }
+
+//        Vaccine vac1=new Vaccine("Polio","WHO",2500.99);
+//        vac1.setId(2);
+//        String status=service.removeVaccineByVaccine(vac1);
+//        System.out.println(status);
+
+        List<Integer> ids=new ArrayList<>();
+        ids.add(1);
+        ids.add(2);
+        ids.add(4);
+
+        String status=service.removeAllVaccines(ids);
+        System.out.println(status);
+
+
     }
-
 }

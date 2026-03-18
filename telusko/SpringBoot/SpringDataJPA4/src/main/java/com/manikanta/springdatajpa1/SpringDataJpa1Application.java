@@ -18,7 +18,19 @@ public class SpringDataJpa1Application {
        ConfigurableApplicationContext container= SpringApplication.run(SpringDataJpa1Application.class, args);
        VaccineService service=container.getBean(VaccineService.class);
 
-       Vaccine vaccine=service.searchVaccineById(3);
-        System.out.println(vaccine);
+//       Vaccine vaccine=service.searchVaccineById(3);
+//        System.out.println(vaccine);
+
+//        Vaccine vac=new Vaccine("Covaxin","BharatBio",454544.4);
+//        vac.setId(54);
+//        service.searchVaccineByGivenInfo(vac).forEach(v-> System.out.println(v));
+
+        List<Integer> ids=new ArrayList<>();
+        ids.add(152);
+        ids.add(153);
+        ids.add(154);
+        String status=service.removeVaccineInfoByIds(ids);
+        System.out.println(status);
+
     }
 }

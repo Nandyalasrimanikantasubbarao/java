@@ -31,8 +31,18 @@ public class VaccineService implements  IVaccineService{
 //        Sort sort=Sort.by(status? Sort.Direction.ASC: Sort.Direction.DESC,params);
 
         Example<Vaccine> exp=Example.of(vac);
-        repo.findAll(exp);
-        return List.of();
+        return repo.findAll(exp);
+
+    }
+
+    @Override
+    public String removeVaccineInfoByIds(Iterable<Integer> ids) {
+        List<Vaccine> list=repo.findAllById(ids);
+        if(list.size()!=0){
+            repo.deleteAllByIdInBatch(ids);
+            return "Record deleted for given ids";
+        }
+        return "unable to delete records";
     }
 
 
